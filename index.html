@@ -14,19 +14,18 @@
         <script async src="assets/js/app.js"></script>
     </head>
     <body>
-        <!-- Navigation Bar-->
+        <!-- Navigation -->
         <header class="navBar">
-            <a class="navBar__logo" href="#accueil"><h1>Web Basement</h1></a>
+            <a class="navBar__logo" href="#accueil"><h1 class="navBar__logoText">Web Basement</h1></a>
             <button class="navBar__burger">Menu</button>
             <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link" href="#accueil">Accueil</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#evenement">L'événement</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#dates">Dates & Planning</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#participer">Intéressé&#8239;?</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#stream">Livestream</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#sponsors">Sponsors</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#team">Team</a></li>
+                <ul class="menu__links">
+                    <li class="menu__link"><a class="link link--uppercase link--big" href="#evenement">L'événement</a></li>
+                    <li class="menu__link"><a class="link link--uppercase link--big" href="#dates">Dates & Planning</a></li>
+                    <li class="menu__link"><a class="link link--uppercase link--big" href="#participer">Intéressé&#8239;?</a></li>
+                    <li class="menu__link"><a class="link link--uppercase link--big" href="#stream">Livestream</a></li>
+                    <li class="menu__link"><a class="link link--uppercase link--big" href="#sponsors">Sponsors</a></li>
+                    <li class="menu__link"><a class="link link--uppercase link--big" href="#team">Team</a></li>
                 </ul>
             </nav>
         </header>
@@ -35,7 +34,8 @@
             <!-- Landing -->
             <section id="accueil" class="landing">
                 <h2 class="title">Web Basement</h2>
-                <small class="landing__tiny">Édition 2019</small>
+                <small class="tiny tiny--bigger tiny--uppercase">Édition 2019</small>
+                <small class="tiny tiny--uppercase tiny--smaller tiny--lined"></small>
             </section>
             <!-- L'événement -->
             <section id="evenement" class="category">
@@ -49,7 +49,7 @@
                 <p>
                     Cet événement est basé sur la coopération des membres de l'option DWM. Plus
                     qu’une compétition, c’est un événement convivial. Il réunit l'ensemble des
-                    personnes qui font vivre l'option DWM&#8239;:&#8129;les nouveaux, les anciens et les
+                    personnes qui font vivre l'option DWM&#8239;:&#8239;les nouveaux, les anciens et les
                     professeurs.
                 </p>
                 <p>
@@ -69,82 +69,90 @@
                     la journée porte ouverte.
                 </p>
             </section>
-            <section id="participer" class="category participate">
+            <section id="participer" class="category">
                 <h3 class="title title--subtitle">Intéressé&#8239;?</h3>
                 <p>
                     Rien de plus simple, il te suffit de cliquer sur le bouton ci-dessous et de
                     remplir le formulaire.
                 </p>
-                <a class="participate__button" href="#">Participer&#8239;!</a>
+                <a class="link link--uppercase link--filled" href="#">Participer&#8239;!</a>
             </section>
             <section id="stream" class="category livestream">
                 <h3 class="title title--subtitle">Livestream</h3>
-                <iframe class="livestream__video" src="https://player.twitch.tv/?channel=webbasement"></iframe>
+                <iframe
+                    class="livestream__video"
+                    src="https://player.twitch.tv/?channel=webbasement"
+                    height="720"
+                    width="1280"
+                    frameborder="0"
+                    scrolling="no"
+                    allowfullscreen="true">
+                </iframe>
             </section>
             <!-- Sponsors -->
             <section id="sponsors" class="category">
                 <h3 class="title title--subtitle">Sponsors</h3>
-                <ul class="sponsors">
-                    <li class="sponsors__item"><img class="sponsors__logo" src="https://via.placeholder.com/150" alt=""></li>
-                    <li class="sponsors__item"><img class="sponsors__logo" src="https://via.placeholder.com/150" alt=""></li>
-                    <li class="sponsors__item"><img class="sponsors__logo" src="https://via.placeholder.com/150" alt=""></li>
-                    <li class="sponsors__item"><img class="sponsors__logo" src="https://via.placeholder.com/150" alt=""></li>
+                <ul class="mosaic">
+                    <li class="mosaic__item"><img class="mosaic__picture" src="https://via.placeholder.com/150" alt=""></li>
+                    <li class="mosaic__item"><img class="mosaic__picture" src="https://via.placeholder.com/150" alt=""></li>
+                    <li class="mosaic__item"><img class="mosaic__picture" src="https://via.placeholder.com/150" alt=""></li>
+                    <li class="mosaic__item"><img class="mosaic__picture" src="https://via.placeholder.com/150" alt=""></li>
                 </ul>
             </section>
             <!-- Team -->
             <section id="team" class="category">
                 <h3 class="title title--subtitle">Team</h3>
-                <ul class="team">
-                    <li class="team__item">
-                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
-                        <small class="team__name">Alexiane</small>
+                <ul class="mosaic">
+                    <li class="mosaic__item">
+                        <img class="mosaic__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="tiny">Alexiane</small>
                     </li>
-                    <li class="team__item">
-                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
-                        <small class="team__name">Aurore</small>
+                    <li class="mosaic__item">
+                        <img class="mosaic__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="tiny">Aurore</small>
                     </li>
-                    <li class="team__item">
-                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
-                        <small class="team__name">Benjamin</small>
+                    <li class="mosaic__item">
+                        <img class="mosaic__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="tiny">Benjamin</small>
                     </li>
-                    <li class="team__item">
-                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
-                        <small class="team__name">Gabriella</small>
+                    <li class="mosaic__item">
+                        <img class="mosaic__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="tiny">Gabriella</small>
                     </li>
-                    <li class="team__item">
-                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
-                        <small class="team__name">Jean-Christophe</small>
+                    <li class="mosaic__item">
+                        <img class="mosaic__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="tiny">Jean-Christophe</small>
                     </li>
-                    <li class="team__item">
-                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
-                        <small class="team__name">Lisa</small>
+                    <li class="mosaic__item">
+                        <img class="mosaic__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="tiny">Lisa</small>
                     </li>
-                    <li class="team__item">
-                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
-                        <small class="team__name">Martin</small>
+                    <li class="mosaic__item">
+                        <img class="mosaic__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="tiny">Martin</small>
                     </li>
-                    <li class="team__item">
-                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
-                        <small class="team__name">Simon</small>
+                    <li class="mosaic__item">
+                        <img class="mosaic__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="tiny">Simon</small>
                     </li>
-                    <li class="team__item">
-                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
-                        <small class="team__name">Timothé</small>
+                    <li class="mosaic__item">
+                        <img class="mosaic__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="tiny">Timothé</small>
                     </li>
-                    <li class="team__item">
-                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
-                        <small class="team__name">Trystan</small>
+                    <li class="mosaic__item">
+                        <img class="mosaic__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="tiny">Trystan</small>
                     </li>
                 </ul>
             </section>
             <section class="category">
-                <ul class="footerList">
-                    <li class="footerList__copy">Un événement DWM | HEAJ &#169;</li>
+                <ul>
+                    <li class="tiny tiny--uppercase">Un événement <a class="link" href="http://dwm.re">DWM</a>&nbsp;|&nbsp;<a class="link" href="https://heaj.be">HEAJ</a>&nbsp;&#169;</li>
                     <li>
                         <ul class="socialLinks">
-                            <li class="socialLinks__item socialLinks__item--twitter"><a href="https://twitter.com/webbasement">Twitter</a></li>
-                            <li class="socialLinks__item socialLinks__item--instagram"><a href="https://www.instagram.com/webbasement_dwm/">Instagram</a></li>
-                            <li class="socialLinks__item socialLinks__item--facebook"><a href="https://www.facebook.com/webbasement/">Facebook</a></li>
+                            <li class="socialLinks__item socialLinks__item--twitter"><a class="socialLinks__link" href="https://twitter.com/webbasement">Twitter</a></li>
+                            <li class="socialLinks__item socialLinks__item--instagram"><a class="socialLinks__link" href="https://www.instagram.com/webbasement_dwm/">Instagram</a></li>
+                            <li class="socialLinks__item socialLinks__item--facebook"><a class="socialLinks__link" href="https://www.facebook.com/webbasement/">Facebook</a></li>
                         </ul>
                     </li>
                 </ul>
