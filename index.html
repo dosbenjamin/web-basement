@@ -1,48 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
+        <!-- Base -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Web Basement 2019 | 6th Edition</title>
+        <title>Web Basement | Édition 2019</title>
+        <!-- CSS -->
         <link rel="stylesheet" href="assets/css/normalize.css">
         <link rel="stylesheet" href="assets/css/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Overpass:800" rel="stylesheet">
-        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/sani-trixie-sans"
-            type="text/css" />
-        <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        <script src="assets/js/app.js"></script>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/sani-trixie-sans" type="text/css" />
+        <!-- JavaScript -->
+        <script async src="assets/js/app.js"></script>
     </head>
-
     <body>
         <!-- Navigation Bar-->
-        <header class="nav-bar">
-            <h1 class="nav-bar__logo">Web Basement</h1>
-            <button class="nav-bar__burger">Menu</button>
-            <nav class="nav-bar__menu"></nav>
+        <header class="navBar">
+            <a class="navBar__logo" href="#accueil"><h1>Web Basement</h1></a>
+            <button class="navBar__burger">Menu</button>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="#accueil">Accueil</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#evenement">L'événement</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#dates">Dates & Planning</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#participer">Intéressé&#8239;?</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#stream">Livestream</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#sponsors">Sponsors</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#team">Team</a></li>
+                </ul>
+            </nav>
         </header>
         <!-- Content -->
         <main>
             <!-- Landing -->
-            <section class="landing">
+            <section id="accueil" class="landing">
                 <h2 class="title">Web Basement</h2>
                 <small class="landing__tiny">Édition 2019</small>
             </section>
             <!-- L'événement -->
-            <section class="category">
+            <section id="evenement" class="category">
                 <h3 class="title title--subtitle">L'événement</h3>
                 <p>
                     Durant 24h les étudiants de 2ème et 3ème année vont créer un projet. Ce
-                    dernier répond à un briefing donné au début du sprint de 24 h. Les étudiants
+                    dernier répond à un briefing donné au début du sprint de 24h. Les étudiants
                     formeront des équipes de deux à quatre personne pour réaliser un site ou une
                     application.
                 </p>
                 <p>
                     Cet événement est basé sur la coopération des membres de l'option DWM. Plus
                     qu’une compétition, c’est un événement convivial. Il réunit l'ensemble des
-                    personnes qui font vivre l'option DWM : les nouveaux, les anciens et les
+                    personnes qui font vivre l'option DWM&#8239;:&#8129;les nouveaux, les anciens et les
                     professeurs.
                 </p>
                 <p>
@@ -51,43 +58,98 @@
                 </p>
             </section>
             <!-- Dates & Planning -->
-            <section class="category">
+            <section id="dates" class="category">
                 <h3 class="title title--subtitle">Dates & Planning</h3>
                 <p>
-                    Cette année la Web Basement aura lieu du mercredi 2 Mai 10:00 du matin au jeudi
-                    3 Mai même heure !
+                    Cette année la Web Basement aura lieu du mercredi 2 Mai 10h00 du matin au jeudi
+                    3 Mai même heure&#8239;!
                 </p>
                 <p>
                     La présentation devant jury aura lieu le samedi 5 Mai dans l'après-midi pendant
                     la journée porte ouverte.
                 </p>
             </section>
-            <section class="category participate">
-                <h3 class="title title--subtitle">Participer</h3>
-                <p>Intéressé ?</p>
+            <section id="participer" class="category participate">
+                <h3 class="title title--subtitle">Intéressé&#8239;?</h3>
                 <p>
                     Rien de plus simple, il te suffit de cliquer sur le bouton ci-dessous et de
                     remplir le formulaire.
                 </p>
                 <a class="participate__button" href="#">Participer&#8239;!</a>
             </section>
-            <section class="category livestream">
+            <section id="stream" class="category livestream">
                 <h3 class="title title--subtitle">Livestream</h3>
-                <iframe class="livestream__video"
-                    src="https://player.twitch.tv/?channel=webbasement" width="100%" height="100%"
-                    allowfullscreen="true">
-                </iframe>
+                <iframe class="livestream__video" src="https://player.twitch.tv/?channel=webbasement"></iframe>
             </section>
             <!-- Sponsors -->
-            <section class="category">
+            <section id="sponsors" class="category">
                 <h3 class="title title--subtitle">Sponsors</h3>
+                <ul class="sponsors">
+                    <li class="sponsors__item"><img class="sponsors__logo" src="https://via.placeholder.com/150" alt=""></li>
+                    <li class="sponsors__item"><img class="sponsors__logo" src="https://via.placeholder.com/150" alt=""></li>
+                    <li class="sponsors__item"><img class="sponsors__logo" src="https://via.placeholder.com/150" alt=""></li>
+                    <li class="sponsors__item"><img class="sponsors__logo" src="https://via.placeholder.com/150" alt=""></li>
+                </ul>
             </section>
             <!-- Team -->
-            <section class="category">
+            <section id="team" class="category">
                 <h3 class="title title--subtitle">Team</h3>
+                <ul class="team">
+                    <li class="team__item">
+                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="team__name">Alexiane</small>
+                    </li>
+                    <li class="team__item">
+                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="team__name">Aurore</small>
+                    </li>
+                    <li class="team__item">
+                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="team__name">Benjamin</small>
+                    </li>
+                    <li class="team__item">
+                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="team__name">Gabriella</small>
+                    </li>
+                    <li class="team__item">
+                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="team__name">Jean-Christophe</small>
+                    </li>
+                    <li class="team__item">
+                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="team__name">Lisa</small>
+                    </li>
+                    <li class="team__item">
+                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="team__name">Martin</small>
+                    </li>
+                    <li class="team__item">
+                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="team__name">Simon</small>
+                    </li>
+                    <li class="team__item">
+                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="team__name">Timothé</small>
+                    </li>
+                    <li class="team__item">
+                        <img class="team__picture" src="https://via.placeholder.com/150" alt="">
+                        <small class="team__name">Trystan</small>
+                    </li>
+                </ul>
+            </section>
+            <section class="category">
+                <ul class="footerList">
+                    <li class="footerList__copy">Un événement DWM | HEAJ &#169;</li>
+                    <li>
+                        <ul class="socialLinks">
+                            <li class="socialLinks__item socialLinks__item--twitter"><a href="https://twitter.com/webbasement">Twitter</a></li>
+                            <li class="socialLinks__item socialLinks__item--instagram"><a href="https://www.instagram.com/webbasement_dwm/">Instagram</a></li>
+                            <li class="socialLinks__item socialLinks__item--facebook"><a href="https://www.facebook.com/webbasement/">Facebook</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </section>
         </main>
-
         <!-- Background Video -->
         <video playsinline autoplay muted loop class="bg-video">
             <source src="assets/video/wb_bg.mp4" type="video/mp4">
