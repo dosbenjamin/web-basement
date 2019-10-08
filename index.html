@@ -1,96 +1,313 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<html lang="fr">
+
+    <head itemscope>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Web Basement 2019 | 6th Edition</title>
+        <title>Web Basement | Édition 2019</title>
+        <meta name="description" content="Compétition annuelle de l'option DWM de la Haute École Albert Jacquard.">
+        <meta itemprop="name" content="Web Basement | Édition 2019">
+        <meta itemprop="description" content="Compétition annuelle de l'option DWM de la Haute École Albert Jacquard.">
+        <meta itemprop="image" content="https://webbasement.be/assets/images/preview.svg">
+        <meta property="og:url" content="https://webbasement.be">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Web Basement | Édition 2019">
+        <meta property="og:description" content="Compétition annuelle de l'option DWM de la Haute École Albert Jacquard.">
+        <meta property="og:image" content="https://webbasement.be/assets/images/preview.svg">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Web Basement | Édition 2019">
+        <meta name="twitter:description" content="Compétition annuelle de l'option DWM de la Haute École Albert Jacquard.">
+        <meta name="twitter:image" content="https://webbasement.be/assets/images/preview.svg">
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#000000">
+        <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#000000">
         <link rel="stylesheet" href="assets/css/normalize.css">
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Overpass:800" rel="stylesheet">
-        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/sani-trixie-sans"
-            type="text/css" />
-        <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        <script src="assets/js/app.js"></script>
+        <link rel="stylesheet" href="assets/css/main.css">
+        <script defer src="assets/js/app.js"></script>
     </head>
 
     <body>
-        <!-- Navigation Bar-->
-        <header class="nav-bar">
-            <h1 class="nav-bar__logo">Web Basement</h1>
-            <button class="nav-bar__burger">Menu</button>
-            <nav class="nav-bar__menu"></nav>
+        <header class="navBar">
+            <a class="navBar__logo" href="#accueil">
+                <h1 class="navBar__logoText">Web Basement</h1>
+            </a>
+            <button class="navBar__burger">Menu</button>
+            <nav class="menu">
+                <ul class="menu__links">
+                    <li class="menu__link"><a class="link link--uppercase link--big" href="#evenement">L'événement</a></li>
+                    <li class="menu__link"><a class="link link--uppercase link--big" href="#dates">Dates & Activités</a></li>
+                    <li class="menu__link"><a class="link link--uppercase link--big link--blue" href="#nouveau">Nouveauté</a></li>
+                    <li class="menu__link"><a class="link link--uppercase link--big" href="#participer">Participer</a></li>
+                    <li class="menu__link"><a class="link link--uppercase link--big" href="#stream">Stream</a></li>
+                    <li class="menu__link"><a class="link link--uppercase link--big" href="#sponsors">Sponsors</a></li>
+                    <li class="menu__link"><a class="link link--uppercase link--big" href="#team">Team</a></li>
+                </ul>
+            </nav>
         </header>
-        <!-- Content -->
         <main>
-            <!-- Landing -->
-            <section class="landing">
+            <section id="accueil" class="landing">
                 <h2 class="title">Web Basement</h2>
-                <small class="landing__tiny">Édition 2019</small>
+                <small class="tiny tiny--bigger tiny--uppercase">Édition 2019</small>
+                <small class="tiny tiny--uppercase tiny--smaller tiny--lined"></small>
+                <a class="landing__arrow" href="#evenement">+</a>
             </section>
-            <!-- L'événement -->
-            <section class="category">
+            <section id="evenement" class="category">
                 <h3 class="title title--subtitle">L'événement</h3>
-                <p>
-                    Durant 24h les étudiants de 2ème et 3ème année vont créer un projet. Ce
-                    dernier répond à un briefing donné au début du sprint de 24 h. Les étudiants
-                    formeront des équipes de deux à quatre personne pour réaliser un site ou une
-                    application.
-                </p>
-                <p>
-                    Cet événement est basé sur la coopération des membres de l'option DWM. Plus
-                    qu’une compétition, c’est un événement convivial. Il réunit l'ensemble des
-                    personnes qui font vivre l'option DWM : les nouveaux, les anciens et les
-                    professeurs.
-                </p>
-                <p>
-                    En gros c'est une compétition et une fête en même temps. C'est le
-                    rassemblement annuel de l'option.
-                </p>
-            </section>
-            <!-- Dates & Planning -->
-            <section class="category">
-                <h3 class="title title--subtitle">Dates & Planning</h3>
-                <p>
-                    Cette année la Web Basement aura lieu du mercredi 2 Mai 10:00 du matin au jeudi
-                    3 Mai même heure !
-                </p>
-                <p>
-                    La présentation devant jury aura lieu le samedi 5 Mai dans l'après-midi pendant
-                    la journée porte ouverte.
+                <div class="sideTexts">
+                    <p>
+                        Durant 24h les étudiants de 2<sup>e</sup> et 3<sup>e</sup> année vont créer un projet. Ce
+                        dernier répond à un briefing donné au début du sprint de 24h. Les étudiants formeront des
+                        équipes de deux à quatre personne pour réaliser un site ou une application.
+                    </p>
+                    <p>
+                        Cet événement est basé sur la coopération des membres de l'option DWM. Plus qu’une compétition,
+                        c’est un événement convivial. Il réunit l'ensemble des personnes qui font vivre l'option
+                        DWM&#8239;:&#8239;les nouveaux, les anciens et les professeurs.
+                    </p>
+                </div>
+                <p class="textCenter">
+                    En gros c'est une compétition et une fête en même temps. C'est&nbsp;le&nbsp;rassemblement annuel
+                    de l'option.
                 </p>
             </section>
-            <section class="category participate">
-                <h3 class="title title--subtitle">Participer</h3>
-                <p>Intéressé ?</p>
-                <p>
-                    Rien de plus simple, il te suffit de cliquer sur le bouton ci-dessous et de
-                    remplir le formulaire.
+            <section id="dates" class="category">
+                <h3 class="title title--subtitle">Dates & Activités</h3>
+                <p class="textCenter textCenter--larger">
+                    Cette année le Web Basement aura lieu du vendredi 3 mai au samedi&nbsp;4&nbsp;mai au B73. La
+                    présentation public et le jury auront lieu le 11 Mai à 16h00 au B99 pendant la journée portes
+                    ouvertes de l'HEAJ.
                 </p>
-                <a class="participate__button" href="#">Participer&#8239;!</a>
+                <div class="table">
+                    <table class="table__item">
+                        <tr class="table__row">
+                            <td class="table__cell">14&#8239;h&#8239;30</td>
+                            <td class="table__cell">Début</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">15&#8239;h&#8239;00</td>
+                            <td class="table__cell">Dactylographie</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">15&#8239;h&#8239;00 à 18&#8239;h&#8239;00</td>
+                            <td class="table__cell">Accueil 1<sup>ères</sup> années</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">16&#8239;h&#8239;00</td>
+                            <td class="table__cell">Tournoi Super Smash</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">17&#8239;h&#8239;00</td>
+                            <td class="table__cell">Basket</td>
+                        </tr>
+                    </table>
+                    <table class="table__item">
+                        <tr class="table__row">
+                            <td class="table__cell">20&#8239;h&#8239;30</td>
+                            <td class="table__cell">Quizz Pop Culture</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">22&#8239;h&#8239;00</td>
+                            <td class="table__cell">Just Dance</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">00&#8239;h&#8239;00</td>
+                            <td class="table__cell">Beer Pong</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">02&#8239;h&#8239;00</td>
+                            <td class="table__cell">Blind Test</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">14&#8239;h&#8239;30</td>
+                            <td class="table__cell">Fin</td>
+                        </tr>
+                    </table>
+                </div>
             </section>
-            <section class="category livestream">
-                <h3 class="title title--subtitle">Livestream</h3>
-                <iframe class="livestream__video"
-                    src="https://player.twitch.tv/?channel=webbasement" width="100%" height="100%"
-                    allowfullscreen="true">
-                </iframe>
+            <section id="nouveau" class="category new">
+                <h3 class="title title--subtitle">Nouveauté&#8239;!</h3>
+                <p class="textCenter">
+                    Cette année, les anciens élèves de la section DWM peuvent aussi participer au Web Basement, que ce
+                    soit seul ou par équipe.
+                </p>
+            </section>
+            <section id="participer" class="category">
+                <h3 class="title title--subtitle">Rejoins l'aventure&#8239;!</h3>
+                <p class="textCenter">
+                    Pour faire partie de la compétition, il te suffit de te rendre sur le lien ci-dessous et de remplir
+                    le formulaire.
+                </p>
+                <a class="link link--uppercase link--filled" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/1qNvkINmSkFXNtrJ2wf4PMx71KMwb-7j2vGuaAkgcDtY/viewform?fbclid=IwAR1wUBsSHm6P5nnFyD9gXpBhYtLZMRKHyYWKhKr8-OwajE4iypBEfZUBGAA&edit_requested=true">Participer&#8239;!</a>
+            </section>
+            <section id="stream" class="category livestream">
+                <h3 class="title title--subtitle">Stream</h3>
+                <div class="livestream__iframe">
+                    <iframe class="livestream__video" src="https://player.twitch.tv/?channel=webbasement" height="720"
+                        width="1280"></iframe>
+                </div>
             </section>
             <!-- Sponsors -->
-            <section class="category">
+            <section id="sponsors" class="category">
                 <h3 class="title title--subtitle">Sponsors</h3>
+                <ul class="mosaic mosaic--sponsors">
+                    <li class="mosaic__item">
+                        <a href="http://www.aucoeurbleu.be" target="_blank" rel="noopener noreferrer">
+                            <img class="mosaic__picture" src="assets/images/aucoeurbleu.png" srcset="assets/images/aucoeurbleu.png 1x, assets/images/aucoeurbleu@2x.png 2x"
+                                alt="Logo Au Coeur Bleu">
+                        </a>
+                    </li>
+                    <li class="mosaic__item">
+                        <a href="https://betterwebtype.com" target="_blank" rel="noopener noreferrer">
+                            <img class="mosaic__picture" src="assets/images/betterwebtype.svg" alt="Logo Better Web Type"
+                                height="100">
+                        </a>
+                    </li>
+                    <li class="mosaic__item">
+                        <a href="http://www.graphica-namur.be" target="_blank" rel="noopener noreferrer">
+                            <img class="mosaic__picture" src="assets/images/graphica.png" alt="Logo Graphica">
+                        </a>
+                    </li>
+                    <li class="mosaic__item">
+                        <a href="http://www.brasserie-des-tchets.be" target="_blank" rel="noopener noreferrer">
+                            <img class="mosaic__picture" src="assets/images/lachatte.svg" alt="Logo La Chatte" height="120">
+                        </a>
+                    </li>
+                    <li class="mosaic__item">
+                        <a href="https://www.sketch.com" target="_blank" rel="noopener noreferrer">
+                            <img class="mosaic__picture" src="assets/images/sketch.svg" alt="Logo Sketch" height="100">
+                        </a>
+                    </li>
+                    <li class="mosaic__item">
+                        <a href="https://www.tentation-bar.be" target="_blank" rel="noopener noreferrer">
+                            <img class="mosaic__picture" src="assets/images/tentationbar.png" alt="Logo Tentation Bar">
+                        </a>
+                    </li>
+                    <li class="mosaic__item">
+                        <a href="https://www.vedett.com" target="_blank" rel="noopener noreferrer">
+                            <img class="mosaic__picture" src="assets/images/vedett.svg" alt="Logo Vedett" height="50">
+                        </a>
+                    </li>
+                    <li class="mosaic__item">
+                        <a href="http://www.wallorico.be/" target="_blank" rel="noopener noreferrer">
+                            <img class="mosaic__picture" src="assets/images/wallorico.png" alt="Logo Wallorico">
+                        </a>
+                    </li>
+                </ul>
             </section>
             <!-- Team -->
-            <section class="category">
+            <section id="team" class="category">
                 <h3 class="title title--subtitle">Team</h3>
+                <ul class="mosaic">
+                    <li class="mosaic__item">
+                        <a class="link" href="https://alexianedapsens.be" target="_blank" rel="noopener noreferrer">
+                            <img class="mosaic__picture" src="assets/images/alexiane.jpg" srcset="assets/images/alexiane.jpg 1x, assets/images/alexiane@2x.jpg 2x"
+                                alt="Photo d'Alexiane">
+                            <small class="tiny">Alexiane</small>
+                        </a>
+                    </li>
+                    <li class="mosaic__item">
+                        <a class="link" href="https://auroreguissard.be" target="_blank" rel="noopener noreferrer">
+                            <img class="mosaic__picture" src="assets/images/aurore.jpg" srcset="assets/images/aurore.jpg 1x, assets/images/aurore@2x.jpg 2x"
+                                alt="Photo d'Aurore">
+                            <small class="tiny">Aurore</small>
+                        </a>
+                    </li>
+                    <li class="mosaic__item">
+                        <a class="link" href="https://benjamindossantos.be" target="_blank" rel="noopener noreferrer">
+                            <img class="mosaic__picture" src="assets/images/benjamin.jpg" srcset="assets/images/benjamin.jpg 1x, assets/images/benjamin@2x.jpg 2x"
+                                alt="Photo de Benjamin">
+                            <small class="tiny">Benjamin</small>
+                        </a>
+                    </li>
+                    <li class="mosaic__item">
+                        <a class="link" href="https://arvanitisgabriella.be" target="_blank" rel="noopener noreferrer">
+                            <img class="mosaic__picture" src="assets/images/gabriella.jpg" srcset="assets/images/gabriella.jpg 1x, assets/images/gabriella@2x.jpg 2x"
+                                alt="Photo de Gabriella">
+                            <small class="tiny">Gabriella</small>
+                        </a>
+                    </li>
+                    <li class="mosaic__item">
+                        <a class="link" href="https://lisapalmigiano.fr" target="_blank" rel="noopener noreferrer">
+                            <img class="mosaic__picture" src="assets/images/lisa.jpg" srcset="assets/images/lisa.jpg 1x, assets/images/lisa@2x.jpg 2x"
+                                alt="Photo de Lisa">
+                            <small class="tiny">Lisa</small>
+                        </a>
+                    </li>
+                    <li class="mosaic__item">
+                        <a class="link" href="https://martinconstant.be" target="_blank" rel="noopener noreferrer">
+                            <img class="mosaic__picture" src="assets/images/martin.jpg" srcset="assets/images/martin.jpg 1x, assets/images/martin@2x.jpg 2x"
+                                alt="Photo de Martin">
+                            <small class="tiny">Martin</small>
+                        </a>
+                    </li>
+                    <li class="mosaic__item">
+                        <a class="link" href="https://simondeclairfayt.be" target="_blank" rel="noopener noreferrer">
+                            <img class="mosaic__picture" src="assets/images/simon.png" srcset="assets/images/simon.png 1x, assets/images/simon@2x.png"
+                                alt="Photo de Simon">
+                            <small class="tiny">Simon</small>
+                        </a>
+                    </li>
+                    <li class="mosaic__item">
+                        <a class="link" href="https://timothebusto.be" target="_blank" rel="noopener noreferrer">
+                            <img class="mosaic__picture" src="assets/images/timothe.jpg" srcset="assets/images/timothe.jpg 1x, assets/images/timothe@2x.jpg 2x"
+                                alt="Photo de Timothé">
+                            <small class="tiny">Timothé</small>
+                        </a>
+                    </li>
+                    <li class="mosaic__item">
+                        <a class="link" href="https://trystanlothaire.be" target="_blank" rel="noopener noreferrer">
+                            <img class="mosaic__picture" src="assets/images/trystan.jpg" srcset="assets/images/trystan.jpg 1x, assets/images/trystan@2x.jpg 2x"
+                                alt="Photo de Trystan">
+                            <small class="tiny">Trystan</small>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="category">
+                <ul class="endList">
+                    <li class="tiny tiny--uppercase">
+                        <a class="link" href="2018/index.html">Voir le site de l'édition 2018</a>
+                    </li>
+                    <li class="tiny tiny--uppercase">Un événement
+                        <a class="link" href="http://dwm.re" target="_blank" rel="noopener noreferrer">DWM</a>&nbsp;|&nbsp;
+                        <a class="link" href="https://heaj.be" target="_blank" rel="noopener noreferrer">HEAJ</a>&nbsp;&#169;
+                    </li>
+                    <li>
+                        <ul class="socialLinks">
+                            <li class="socialLinks__item socialLinks__item--twitter">
+                                <a class="socialLinks__link" href="https://twitter.com/webbasement" target="_blank" rel="noopener noreferrer">Twitter</a>
+                            </li>
+                            <li class="socialLinks__item socialLinks__item--instagram">
+                                <a class="socialLinks__link" href="https://www.instagram.com/webbasement_dwm/" target="_blank"
+                                    rel="noopener noreferrer">Instagram</a>
+                            </li>
+                            <li class="socialLinks__item socialLinks__item--facebook">
+                                <a class="socialLinks__link" href="https://www.facebook.com/webbasement/" target="_blank"
+                                    rel="noopener noreferrer">Facebook</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </section>
         </main>
-
-        <!-- Background Video -->
         <video playsinline autoplay muted loop class="bg-video">
             <source src="assets/video/wb_bg.mp4" type="video/mp4">
+            <source src="assets/video/wb_bg.webm" type="video/webp">
         </video>
     </body>
+
 </html>
