@@ -25,24 +25,21 @@ menuLinks.forEach(element => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth', block: 'start'
-        });
-    });
-});
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth', block: 'start' })
+    })
+})
 // Timer
-function count() {
-    now = new Date();
-    now = new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate(),
-        now.getHours(), now.getMinutes(), now.getSeconds(), now.getMilliseconds()));
-    futur = new Date(Date.UTC(2019, 4, 03, 10, 00)).getTime();
-    eventTime = Math.floor((futur - now) / 1000);
+const count = () => {
+    let now = new Date()
+    now = new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours(), now.getMinutes(), now.getSeconds(), now.getMilliseconds()))
+    const futur = new Date(Date.UTC(2019, 4, 03, 14, 30)).getTime()
+    const eventTime = Math.floor((futur - now) / 1000)
     if (eventTime > 0) {
-        let days = parseInt(eventTime / 86400);
-        let hours = parseInt((eventTime - days * 86400) / 3600);
-        let minutes = parseInt((eventTime - (days * 86400) - (hours * 3600)) / 60);
-        let seconds = parseInt((eventTime - (days * 86400) - (hours * 3600) - (minutes * 60)));
-        document.querySelector('.landing .tiny--smaller').textContent = days + 'J ' + hours + 'H ' + minutes + 'M ' + seconds + 'S';
+        const days = parseInt(eventTime / 86400)
+        const hours = parseInt((eventTime - days * 86400) / 3600)
+        const minutes = parseInt((eventTime - (days * 86400) - (hours * 3600)) / 60)
+        const seconds = parseInt((eventTime - (days * 86400) - (hours * 3600) - (minutes * 60)))
+        document.querySelector('.landing .tiny--smaller').textContent = days + 'J ' + hours + 'H ' + minutes + 'M ' + seconds + 'S'
     }
 }
 setInterval(count, 1000);

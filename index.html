@@ -36,7 +36,7 @@
         <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#000000">
         <link rel="stylesheet" href="assets/css/normalize.css">
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/main.css">
         <script defer src="assets/js/app.js"></script>
     </head>
 
@@ -52,7 +52,7 @@
                     <li class="menu__link"><a class="link link--uppercase link--big" href="#dates">Dates & Activités</a></li>
                     <li class="menu__link"><a class="link link--uppercase link--big link--blue" href="#nouveau">Nouveauté</a></li>
                     <li class="menu__link"><a class="link link--uppercase link--big" href="#participer">Participer</a></li>
-                    <li class="menu__link"><a class="link link--uppercase link--big" href="#stream">Livestream</a></li>
+                    <li class="menu__link"><a class="link link--uppercase link--big" href="#stream">Stream</a></li>
                     <li class="menu__link"><a class="link link--uppercase link--big" href="#sponsors">Sponsors</a></li>
                     <li class="menu__link"><a class="link link--uppercase link--big" href="#team">Team</a></li>
                 </ul>
@@ -87,14 +87,14 @@
             <section id="dates" class="category">
                 <h3 class="title title--subtitle">Dates & Activités</h3>
                 <p class="textCenter textCenter--larger">
-                    Cette année le Web Basement aura lieu du vendredi 3 mai au samedi&nbsp;4&nbsp;mai. La
+                    Cette année le Web Basement aura lieu du vendredi 3 mai au samedi&nbsp;4&nbsp;mai au B73. La
                     présentation public et le jury auront lieu le 11 Mai à 16h00 au B99 pendant la journée portes
                     ouvertes de l'HEAJ.
                 </p>
                 <div class="table">
                     <table class="table__item">
                         <tr class="table__row">
-                            <td class="table__cell">14&#8239;h&#8239;00</td>
+                            <td class="table__cell">14&#8239;h&#8239;30</td>
                             <td class="table__cell">Début</td>
                         </tr>
                         <tr class="table__row">
@@ -132,7 +132,7 @@
                             <td class="table__cell">Blind Test</td>
                         </tr>
                         <tr class="table__row">
-                            <td class="table__cell">14&#8239;h&#8239;00</td>
+                            <td class="table__cell">14&#8239;h&#8239;30</td>
                             <td class="table__cell">Fin</td>
                         </tr>
                     </table>
@@ -154,10 +154,10 @@
                 <a class="link link--uppercase link--filled" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/1qNvkINmSkFXNtrJ2wf4PMx71KMwb-7j2vGuaAkgcDtY/viewform?fbclid=IwAR1wUBsSHm6P5nnFyD9gXpBhYtLZMRKHyYWKhKr8-OwajE4iypBEfZUBGAA&edit_requested=true">Participer&#8239;!</a>
             </section>
             <section id="stream" class="category livestream">
-                <h3 class="title title--subtitle">Livestream</h3>
+                <h3 class="title title--subtitle">Stream</h3>
                 <div class="livestream__iframe">
-                    <iframe sandbox="allow-scripts allow-same-origin allow-presentation" class="livestream__video" src="https://player.twitch.tv/?channel=webbasement"
-                        height="720" width="1280"></iframe>
+                    <iframe class="livestream__video" src="https://player.twitch.tv/?channel=webbasement" height="720"
+                        width="1280"></iframe>
                 </div>
             </section>
             <!-- Sponsors -->
@@ -165,8 +165,15 @@
                 <h3 class="title title--subtitle">Sponsors</h3>
                 <ul class="mosaic mosaic--sponsors">
                     <li class="mosaic__item">
+                        <a href="http://www.aucoeurbleu.be" target="_blank" rel="noopener noreferrer">
+                            <img class="mosaic__picture" src="assets/images/aucoeurbleu.png" srcset="assets/images/aucoeurbleu.png 1x, assets/images/aucoeurbleu@2x.png 2x"
+                                alt="Logo Au Coeur Bleu">
+                        </a>
+                    </li>
+                    <li class="mosaic__item">
                         <a href="https://betterwebtype.com" target="_blank" rel="noopener noreferrer">
-                            <img class="mosaic__picture" src="assets/images/betterwebtype.svg" alt="Logo Better Web Type">
+                            <img class="mosaic__picture" src="assets/images/betterwebtype.svg" alt="Logo Better Web Type"
+                                height="100">
                         </a>
                     </li>
                     <li class="mosaic__item">
@@ -176,7 +183,12 @@
                     </li>
                     <li class="mosaic__item">
                         <a href="http://www.brasserie-des-tchets.be" target="_blank" rel="noopener noreferrer">
-                            <img class="mosaic__picture" src="assets/images/lachatte.svg" alt="Logo La Chatte">
+                            <img class="mosaic__picture" src="assets/images/lachatte.svg" alt="Logo La Chatte" height="120">
+                        </a>
+                    </li>
+                    <li class="mosaic__item">
+                        <a href="https://www.sketch.com" target="_blank" rel="noopener noreferrer">
+                            <img class="mosaic__picture" src="assets/images/sketch.svg" alt="Logo Sketch" height="100">
                         </a>
                     </li>
                     <li class="mosaic__item">
@@ -186,7 +198,7 @@
                     </li>
                     <li class="mosaic__item">
                         <a href="https://www.vedett.com" target="_blank" rel="noopener noreferrer">
-                            <img class="mosaic__picture" src="assets/images/vedett.svg" alt="Logo Vedett">
+                            <img class="mosaic__picture" src="assets/images/vedett.svg" alt="Logo Vedett" height="50">
                         </a>
                     </li>
                     <li class="mosaic__item">
